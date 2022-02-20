@@ -1,0 +1,38 @@
+.featured .featured-slider {
+
+    padding       : 1rem;
+    padding-bottom: 4rem;
+
+    .box {
+        text-align   : center;
+        padding      : 3rem 2rem;
+        box-shadow   : var(--boxShadow);
+        border       : var(--border);
+        border-radius: .5rem;
+        direction    : ltr;
+
+        &:hover img {
+            transform: scale(.9);
+        }
+
+        img {
+            height: 10rem;
+        }
+
+        h3 {
+            @include fontStyle(2.2rem, var(--black));
+        }
+
+        .stars {
+            padding: 1rem 0;
+
+            i {
+                @include fontStyle(1.7rem, var(--theme));
+            }
+        }
+
+        .price {
+            @include fontStyle(2.5rem, var(--black));
+        }
+    }
+}

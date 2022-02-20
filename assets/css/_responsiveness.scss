@@ -1,0 +1,128 @@
+@media (min-width: 1500px) {
+
+    .services .box-container {
+        @include grid(40rem)
+    }
+}
+
+@media (min-width: 1041px) {
+
+    .featured .featured-slider .box img {
+        height: 13rem;
+    }
+}
+
+
+
+@media (max-width: 991px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    .header {
+        padding: 2rem;
+
+        &.userScrolling {
+            padding: 2rem;
+        }
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    .header {
+
+        #menuBtn,
+        #loginBtn i {
+            display: block;
+        }
+
+        #menuBtn.fa-times {
+            color    : tomato;
+            transform: rotate(180deg);
+        }
+
+        #loginBtn .btn {
+            display: none;
+        }
+
+        .navbar {
+            position  : absolute;
+            top       : 99%;
+            left      : 0;
+            right     : 0;
+            background: #fff;
+            border-top: var(--border);
+            clip-path : polygon(0 0, 100% 0, 100% 0, 0 0);
+            transition: .2s linear;
+
+            &.userClick {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+
+            a {
+                display         : block;
+                background-color: #eee;
+                padding         : 2rem;
+                margin          : 1.5rem 2rem;
+                font-size       : 2rem;
+                border-radius   : .5rem;
+
+                &.active,
+                &:hover {
+                    background: var(--themeLight);
+                    color     : var(--black);
+                }
+            }
+        }
+    }
+
+    .featured .featured-slider .box img {
+        height: 18rem;
+    }
+
+    .contact .row .map {
+        height: 45rem;
+    }
+}
+
+
+
+@media (max-width: 450px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .heading {
+        font-size: 4rem;
+    }
+
+    .newsletter h3 {
+        font-size: 2.5rem;
+    }
+
+    .footer .box-container {
+        @include grid(20rem);
+    }
+}
+
+
+@media (max-width: 280px) {
+
+    .featured .featured-slider .box img {
+        height: 10rem;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        @include fontStyle(3rem, var(--themeLight))
+    }
+}

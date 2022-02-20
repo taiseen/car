@@ -1,0 +1,50 @@
+.footer {
+
+    background-color: var(--themeLight);
+
+    .box-container {
+
+        @include grid(25rem);
+
+        .box {
+            margin-bottom: 2rem;
+
+            h3 {
+                padding    : 1rem 0;
+                font-size  : 2.2rem;
+                font-weight: 500;
+            }
+
+            a {
+                display: block;
+                padding: 1rem 0;
+                @include fontStyle(1.5rem, var(--black));
+
+
+                &:hover i {
+                    padding-right: 1.2rem;
+                }
+
+                i {
+                    padding-right: .7rem;
+                }
+            }
+
+            .email {
+                text-transform: lowercase;
+            }
+        }
+    }
+
+    .credit {
+        padding-top: 2rem;
+        font-size  : 2rem;
+        text-align : center;
+        border-top : .1rem dotted var(--black);
+
+        span {
+            color: tomato
+        }
+    }
+
+}

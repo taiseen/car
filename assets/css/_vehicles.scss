@@ -1,0 +1,60 @@
+.vehicles .vehicles-slider {
+    
+    padding-bottom: 5rem;
+
+    .box {
+        text-align   : center;
+
+        img {
+            width    : 100%;
+            opacity  : 0.5;
+            transform: scale(.8);
+        }
+
+        .content {
+            transform  : scale(0);
+            padding-top: 1rem;
+
+            h3 {
+                @include fontStyle(2.5rem, var(--black));
+            }
+
+            .price {
+                @include fontStyle(2.5rem, var(--theme));
+                font-weight: bolder;
+                padding    : 1rem 0;
+
+                span {
+                    @include fontStyle(1.7rem, var(--lightColor));
+                    font-weight: normal;
+                }
+            }
+
+            p {
+                @include fontStyle(1.6rem, var(--lightColor));
+                padding    : 1rem;
+                padding-top: 1.5rem;
+                border-top : var(--border);
+
+                span {
+                    @include fontStyle(.8rem, var(--theme));
+                    padding: 0 .5rem;
+                }
+
+            }
+        }
+    }
+
+    /*only show center position elements details...*/
+    .swiper-slide-active {
+
+        img {
+            opacity  : 1;
+            transform: scale(1);
+        }
+
+        .content {
+            transform: scale(1);
+        }
+    }
+}

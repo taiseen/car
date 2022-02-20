@@ -1,0 +1,46 @@
+.contact .row {
+
+    display  : flex;
+    flex-wrap: wrap;
+    gap      : 1.5rem;
+
+    .map {
+        width: 100%;
+    }
+
+    .map,
+    form {
+        flex         : 1 1 42rem;
+        padding      : 1rem;
+        border       : var(--border);
+        box-shadow   : var(--boxShadow);
+        border-radius: .5rem;
+        text-align   : center;
+    }
+
+    form {
+
+        h3 {
+            @include fontStyle(3rem, var(--lightColor));
+            font-weight: 500;
+        }
+
+        .box {
+            margin        : 0.7rem 0;
+            padding       : 1rem;
+            width         : 100%;
+            border        : var(--border);
+            text-transform: none;
+            border-radius : .5rem;
+            @include fontStyle(1.6rem, var(--black));
+        }
+
+        textarea {
+            height: 15rem;
+            resize: none;
+
+        }
+    }
+
+
+}

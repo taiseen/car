@@ -1,0 +1,44 @@
+.reviews .reviews-slider {
+
+    padding-bottom: 3rem;
+
+    .box {
+        padding   : 2.5rem 2rem;
+        margin    : 2rem 0;
+        text-align: center;
+        opacity   : 0.4;
+        transform : scale(.8);
+        transition: .2s linear;
+
+        img {
+            height       : 7rem;
+            width        : 7rem;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        .content {
+
+            p {
+                padding: 1rem 0;
+                @include fontStyle(1.4rem, var(--lightColor));
+            }
+
+            h3 {
+                padding-bottom: 1rem;
+                @include fontStyle(1.7rem, var(--black));
+            }
+
+            i {
+                @include fontStyle(1.7rem, var(--theme));
+            }
+        }
+    }
+
+    .swiper-slide-active {
+        opacity   : 1;
+        transform : scale(1);
+        border    : var(--border);
+        box-shadow: var(--boxShadow);
+    }
+}

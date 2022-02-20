@@ -1,0 +1,15 @@
+.home {
+    text-align: center;
+    // overflow-x: hidden;
+
+
+    h1 {
+        @include fontStyle(7.5vw, var(--black));
+        text-transform: uppercase;
+    }
+
+    img {
+        width : 100%;
+        margin: 1rem 0;
+    }
+}

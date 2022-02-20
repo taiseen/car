@@ -1,0 +1,52 @@
+.services {
+
+    .box-container {
+        @include grid(30rem);
+
+        .box {
+            padding      : 3rem 2rem;
+            text-align   : center;
+            border-radius: .5rem;
+            border       : var(--border);
+            box-shadow   : var(--boxShadow);
+            cursor       : pointer;
+            transition   : .2s linear;
+
+            &:hover {
+                background-color: var(--black);
+            }
+
+            &:hover i {
+                transform: translateY(-1rem);
+            }
+
+            &:hover h3 {
+                color: var(--white);
+            }
+
+            &:hover p {
+                color: #eee;
+            }
+
+            i {
+                @include fontStyle(2.5rem, var(--black));
+                height          : 6rem;
+                width           : 6rem;
+                line-height     : 6rem;
+                margin-bottom   : 1rem;
+                border-radius   : 50%;
+                background-color: var(--theme);
+            }
+
+            h3 {
+                @include fontStyle(2.2rem, var(--black));
+            }
+
+            p {
+                @include fontStyle(1.5rem, var(--lightColor));
+                line-height: 2;
+                padding    : 1rem 0;
+            }
+        }
+    }
+}

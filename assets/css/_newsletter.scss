@@ -1,0 +1,51 @@
+.newsletter {
+
+    padding            : 6rem 2rem;
+    text-align         : center;
+    background         : url(../img/letter-bg.png) no-repeat;
+    background-position: center;
+    background-size    : cover;
+
+    h3 {
+        @include fontStyle(3rem, var(--black));
+    }
+
+    p {
+        @include fontStyle(1.5rem, var(--lightColor));
+        padding: 1rem 0;
+    }
+
+    form {
+        margin              : 1rem auto;
+        max-width           : 60rem;
+        height              : 5rem;
+        display             : flex;
+        overflow            : hidden;
+        border-radius       : 5rem;
+        box-decoration-break: var(--boxShadow);
+
+        .box {
+            height        : 100%;
+            width         : 100%;
+            padding       : 0 2rem;
+            text-transform: none;
+            @include fontStyle(1.7rem, var(--black));
+
+            &::placeholder {
+                color: var(--lightColor);
+            }
+        }
+
+        input[type="submit"] {
+            height    : 100%;
+            width     : 17rem;
+            cursor    : pointer;
+            background: var(--themeLight);
+            @include fontStyle(1.7rem, var(--black));
+
+            &:hover {
+                background: var(--theme);
+            }
+        }
+    }
+}

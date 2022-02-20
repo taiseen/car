@@ -1,0 +1,60 @@
+
+.icons-container {
+    @include grid(25rem);
+    padding-top          : 5rem;
+    padding-bottom       : 5rem;
+    background-color     : #eee;
+
+    .icons {
+        display         : flex;
+        align-items     : center;
+        gap             : 1.5rem;
+        padding         : 2rem;
+        background-color: var(--white);
+        box-shadow      : var(--boxShadow);
+        border-radius   : .5rem;
+        cursor          : pointer;
+
+        &:hover {
+            background-color: var(--black);
+        }
+
+        &:hover i {
+            background-color: var(--theme);
+        }
+
+        &:hover .content h3 span{
+            color: var(--white);
+        }
+
+        &:hover .content p {
+            color: #eee;
+        }
+
+
+        i {
+            height          : 6rem;
+            width           : 6rem;
+            line-height     : 6rem;
+            border-radius   : 50%;
+            background-color: #eee;
+            text-align      : center;
+            @include fontStyle(2.5rem, var(--black));
+        }
+
+        .content {
+
+            h3 {
+                @include fontStyle(2.5rem, var(--theme));
+
+                span {
+                    color: var(--black);
+                }
+            }
+
+            p {
+                @include fontStyle(1.8rem, var(--black));
+            }
+        }
+    }
+}
