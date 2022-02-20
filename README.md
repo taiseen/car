@@ -21,7 +21,7 @@ What challenges did I face & how did I overcome them?
 * Number Counter
 * Scroll Navigation
 * Slider Center Position
-* reverse Swiper Slider
+* Reverse Swiper Slider
 * Customize Swiper Sliders Buttons
 * Responsive Toggle Menu
 * Googl Map Integration
@@ -33,6 +33,6 @@ What challenges did I face & how did I overcome them?
 3. Chrome Developer Tools 
 4. Past Experience
 
-Inspire to learning from [link](https://youtu.be/tuURYMcX8S8)
+Inspire to learning from [...](https://youtu.be/tuURYMcX8S8)
 
 <img src="https://i.ibb.co/1LzZJbq/Car-Max-Wheels.jpg" />
